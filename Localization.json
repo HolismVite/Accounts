@@ -2,7 +2,13 @@
     {
         "locale": "fa",
         "translations": {
-            "Logs": "لاگ ها"
+            "Users": "کاربران",
+            "Sync": "هماهنگ سازی",
+            "Guid": "شناسه",
+            "Display Name": "نام نمایشی",
+            "User name": "نام کاربری",
+            "Email": "ایمیل",
+            "Last Sync Date": "آخرین تاریخ هماهنگ سازی"
         }
     }
 ]

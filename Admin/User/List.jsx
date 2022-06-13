@@ -46,9 +46,9 @@ const headers =
     <>
         <th>Guid</th>
         <th>Display Name</th>
-        <th>Username</th>
+        <th>User name</th>
         <th>Email</th>
-        <th>LastSyncDate</th>
+        <th>Last Sync Date</th>
     </>
 
 const row = (item) => {
