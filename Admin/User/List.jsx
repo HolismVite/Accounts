@@ -2,15 +2,20 @@ import { List, ListAction, Text, post, app } from '@List'
 import SyncAltIcon from '@mui/icons-material/SyncAlt';
 
 const listActions = () => {
-    const syncUsers = ({ setProgress, reloadList }) => {
+    const syncUsers = ({
+        error,
+        reloadList,
+        setProgress,
+        success,
+    }) => {
         setProgress(true);
         post('/User/sync').then(data => {
             reloadList();
             setProgress(false);
-            app.success('Users are synced');
-        }, error => {
+            success('Users are synced');
+        }, e => {
             setProgress(false);
-            app.error(error);
+            error(e);
         })
     };
 
