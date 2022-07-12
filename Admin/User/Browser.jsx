@@ -1,4 +1,4 @@
-import { Browse, Text } from '@Browse';
+import { List, Text } from '@Browse';
 
 const card = (item) => {
     return <>
@@ -8,7 +8,7 @@ const card = (item) => {
 }
 
 const UserBrowser = () => {
-    return <Browse
+    return <List
         entityType='user'
         card={card}
     />
