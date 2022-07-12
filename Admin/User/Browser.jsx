@@ -1,4 +1,4 @@
-import { List, Text } from '@Browse';
+import { Text } from '@Browse';
 
 const card = (item) => {
     return <>
@@ -8,10 +8,7 @@ const card = (item) => {
 }
 
 const UserBrowser = () => {
-    return <List
-        entityType='user'
-        card={card}
-    />
+    return <div>user browser</div>
 }
 
 export default UserBrowser;
